@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: meudwprojects
+    database: meudwprojects
+    schema: meudwprojects
+    tables:
+      - name: student_mat
+      - name: student_por
+
