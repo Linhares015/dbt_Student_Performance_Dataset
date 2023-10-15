@@ -14,7 +14,19 @@ Para executar o projeto, basta executar o comando `dbt run` no diretório raiz d
 
 - [Escopo de Negócio](/documentacao/escopo_negocio.md)
 
+- Estrutura do Modelo: 
 
+```mermaid
+
+graph LR
+    base_csv --> seeds --> raw --> staging --> intermediate --> marts --> visualização
+    dbt -.-> seeds
+    dbt -.-> raw
+    dbt -.-> staging
+    dbt -.-> intermediate
+    dbt -.-> marts
+
+```
 
 
 Selo:
